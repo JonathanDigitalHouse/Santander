@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background: #f0a83e;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  list-style: none;
+  color: white;
+}
+
+nav ul li::before {
+  content: url('pawprint.png');
+}
