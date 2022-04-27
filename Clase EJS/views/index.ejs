@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primer EJS</title>
+  </head>
+  <body>
+    <h3>Registro nueva persona</h3>
+
+    <form action="/" method="post">
+      <input type="text" placeholder="nombre" name="nombre" />
+      <input type="number" placeholder="DNI" name="dni" />
+      <input type="number" placeholder="Nº T.Credito" name="credito" />
+      <input type="submit" value="Agregar" />
+    </form>
+
+    <ul>
+      <% users.forEach((user) => { %>
+      <li><%= user %></li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
